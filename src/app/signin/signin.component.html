@@ -1,0 +1,47 @@
+<div class="login-page">
+  <div class="form">
+  
+     <form [formGroup]="signinForm" (ngSubmit)="onSubmit(signinForm.value)">
+
+      <input type="text" placeholder="username"  formControlName="username"/>
+
+      <input type="password" placeholder="password"  formControlName="password"/>
+
+
+<button class="btn btn-custom right" type="submit" value="submit">Login</button>
+
+                      <input type="reset" class="btn btn-custom right" value="Reset"> 
+
+      <p class="message">Not registered? <a  href="signup/">Create an account</a></p>
+      <div class="text-right p-t-8 p-b-31">
+						<a href="#">
+							Forgot password?
+						</a>
+					</div>
+
+					<div class="txt1 text-center p-t-54 p-b-20">
+						<span>
+							Or Sign Up Using
+						</span>
+					</div>
+
+					<div class="flex-c-m">
+						<a href="#" class="login100-social-item bg1">
+							<i class="fa fa-facebook"></i>
+						</a>
+
+						<a href="#" class="login100-social-item bg2">
+							<i class="fa fa-twitter"></i>
+						</a>
+
+						<a href="#" class="login100-social-item bg3">
+							<i class="fa fa-google"></i>
+						</a>
+					</div>
+
+					
+				</form>
+   
+</div>
+</div>
+
